@@ -1,0 +1,34 @@
+arm:
+  fields:
+    mode:
+      required: true
+      selector:
+        select:
+          options: [armed_away, armed_home, armed_vacation]
+    code:
+      selector:
+        text:
+          type: password
+    force:
+      selector:
+        boolean:
+    source:
+      selector:
+        text:
+disarm:
+  fields:
+    code:
+      required: true
+      selector:
+        text:
+          type: password
+    source:
+      selector:
+        text:
+check:
+  fields:
+    mode:
+      required: true
+      selector:
+        select:
+          options: [armed_away, armed_home, armed_vacation]

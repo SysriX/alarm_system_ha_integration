@@ -1,0 +1,29 @@
+{
+  "services": {
+    "arm": {
+      "name": "Arm",
+      "description": "Arms the alarm system. Response: ok, open (open sensors), bypassed.",
+      "fields": {
+        "mode": {"name": "Mode", "description": "armed_away = Away, armed_home = Home/Night, armed_vacation = Vacation"},
+        "code": {"name": "PIN", "description": "Only needed if arming requires a PIN"},
+        "force": {"name": "Arm anyway", "description": "Bypass open sensors instead of aborting"},
+        "source": {"name": "Source", "description": "Shown in the history (e.g. Leaving)"}
+      }
+    },
+    "disarm": {
+      "name": "Disarm",
+      "description": "Disarms the alarm system with a PIN.",
+      "fields": {
+        "code": {"name": "PIN", "description": "PIN of a person"},
+        "source": {"name": "Source", "description": "Shown in the history"}
+      }
+    },
+    "check": {
+      "name": "Check open sensors",
+      "description": "Returns the open or unavailable sensors of a mode.",
+      "fields": {
+        "mode": {"name": "Mode", "description": "armed_away, armed_home or armed_vacation"}
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "services": {
+    "arm": {
+      "name": "Scharf schalten",
+      "description": "Schaltet die Alarmanlage scharf. Antwort: ok, open (offene Sensoren), bypassed.",
+      "fields": {
+        "mode": {"name": "Modus", "description": "armed_away = Abwesend, armed_home = Zuhause/Nacht, armed_vacation = Urlaub"},
+        "code": {"name": "PIN", "description": "Nur nötig, wenn Scharfschalten eine PIN verlangt"},
+        "force": {"name": "Trotzdem scharf", "description": "Offene Sensoren überspringen statt abbrechen"},
+        "source": {"name": "Quelle", "description": "Steht im Verlauf (z. B. Ich gehe)"}
+      }
+    },
+    "disarm": {
+      "name": "Unscharf schalten",
+      "description": "Schaltet die Alarmanlage mit PIN unscharf.",
+      "fields": {
+        "code": {"name": "PIN", "description": "PIN einer Person"},
+        "source": {"name": "Quelle", "description": "Steht im Verlauf"}
+      }
+    },
+    "check": {
+      "name": "Offene Sensoren prüfen",
+      "description": "Liefert die offenen oder nicht erreichbaren Sensoren eines Modus.",
+      "fields": {
+        "mode": {"name": "Modus", "description": "armed_away, armed_home oder armed_vacation"}
+      }
+    }
+  }
+}
