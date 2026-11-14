@@ -2,6 +2,12 @@
 
 A self-contained alarm system for Home Assistant: one `alarm_control_panel` with the modes **Away**, **Home / Night** and **Vacation**, a PIN per person, sensors per mode, entry/exit delays, a history log, notification channels and optional automation (presence / BLE, door lock, "only arm when closed").
 
+![Alarm System preview](docs/images/preview.png)
+*Companion card [Home Twin Alarm Card](https://github.com/SysriX/home_twin_alarm_ha_card): tiles for disarmed / armed (home) and the control popup with mode selection and PIN pad (UI in German)*
+
+![Alarm System history](docs/images/history.png)
+*History tab of the control popup (UI in German)*
+
 Integration domain: `alarm_system`  
 Version: 1.2.0  
 UI language of the built-in texts (states, history, notifications): German
